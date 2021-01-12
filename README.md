@@ -1,27 +1,67 @@
-# AngularMaterialForms
+# :zap: Angular Material Table
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.6.
+* App using the [Angular Material design component library](https://material.angular.io/) to add a reactive form
+* Code by Dmytro Mezhenskyi from [Dev Plus Plus](https://www.youtube.com/channel/UCSj1Igu3ejxqcQISNEmx8VQ) - see [:clap: Inspiration](#clap-inspiration) below. I am using it to learn a higher level of Angular programming - specifically reactive form control
 
-## Development server
+*** Note: to open web links in a new window use: _ctrl+click on link_**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## :page_facing_up: Table of contents
 
-## Code scaffolding
+* [:zap: Angular Material Table](#zap-angular-material-table)
+  * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
+  * [:books: General info](#books-general-info)
+  * [:camera: Screenshots](#camera-screenshots)
+  * [:signal_strength: Technologies](#signal_strength-technologies)
+  * [:floppy_disk: Setup](#floppy_disk-setup)
+  * [:computer: Code Examples](#computer-code-examples)
+  * [:cool: Features](#cool-features)
+  * [:clipboard: Status & To-Do List](#clipboard-status--to-do-list)
+  * [:clap: Inspiration](#clap-inspiration)
+  * [:envelope: Contact](#envelope-contact)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## :books: General info
 
-## Build
+* [ControlValueAccessor Interface](https://angular.io/api/forms/ControlValueAccessor) used as an interface that acts as a bridge between the Angular forms API and a native element in the DOM
+* [Angular component error state](https://github.com/angular/components/blob/master/src/material/core/common-behaviors/error-state.ts)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## :camera: Screenshots
 
-## Running unit tests
+![Example screenshot](./img/form.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## :signal_strength: Technologies
 
-## Running end-to-end tests
+* [Angular v11](https://angular.io/)
+* [Angular Material v11](https://material.angular.io/)
+* [RxJS](https://rxjs-dev.firebaseapp.com/guide/overview) library of observable sequences
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## :floppy_disk: Setup
 
-## Further help
+* Install dependencies using `npm i`
+* Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## :computer: Code Examples
+
+```html
+
+```
+
+## :cool: Features
+
+* tba
+
+## :clipboard: Status & To-Do List
+
+* Status: Incomplete
+* To-Do: Complete
+
+## :clap: Inspiration
+
+* Project inspired by these 2 Youtube tutorials by [Dev Plus Plus](https://www.youtube.com/channel/UCSj1Igu3ejxqcQISNEmx8VQ)
+
+* [Angular Material - Custom Form Field Control [Advanced, 2020, Pt.1]](https://www.youtube.com/watch?v=8ThVof0Rz64),
+* [2. Data Table](https://www.youtube.com/watch?v=ao-nY-9biWs&list=PL55RiY5tL51p2R1L8sxaYlzmWh6yIrX8k&index=2),
+
+## :envelope: Contact
+
+* Repo created by [ABateman](https://www.andrewbateman.org) - you are welcome to [send me a message](https://andrewbateman.org/contact)
