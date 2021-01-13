@@ -1,7 +1,9 @@
-# :zap: Angular Material Table
-
-* App using the [Angular Material design component library](https://material.angular.io/) to add a reactive form
-* Code by Dmytro Mezhenskyi from [Dev Plus Plus](https://www.youtube.com/channel/UCSj1Igu3ejxqcQISNEmx8VQ) - see [:clap: Inspiration](#clap-inspiration) below. I am using it to learn a higher level of Angular programming - specifically reactive form control
+# :zap: Angular Material Advanced
+ 
+* **overlay-example** Angular Date Range Picker:
+* **patterns example** Bridge Angular design pattern: velocity and weather widgets using a common wrapper
+* **complex-form-control** Custom form field control with Angular Material & Reactive Forms using the [Angular Material design component library](https://material.angular.io/)
+* **Code by Dmytro Mezhenskyi** from [Dev Plus Plus](https://www.youtube.com/channel/UCSj1Igu3ejxqcQISNEmx8VQ) - see [:clap: Inspiration](#clap-inspiration) below. I am using it to learn a higher level of Angular programming
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
@@ -21,6 +23,13 @@
 
 ## :books: General info
 
+* **overlay example**
+* [Angular Material Datepicker](https://material.angular.io/components/datepicker/overview) to be able to enter a date either through text input or by choosing a date from the calendar
+
+* **patterns example**
+* [@Angular/core ContentChild](https://angular.io/api/core/ContentChild) parameter decorator that configures a content query - to get reference to the template component
+
+* **complex-form-control**
 * [ControlValueAccessor Interface](https://angular.io/api/forms/ControlValueAccessor) used as an interface that acts as a bridge between the Angular forms API and a native element in the DOM
 * [Angular component error state](https://github.com/angular/components/blob/master/src/material/core/common-behaviors/error-state.ts)
 
@@ -39,6 +48,7 @@
 * Install dependencies using `npm i`
 * Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 * Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+* Run `ng update` to update Angular
 
 ## :computer: Code Examples
 
@@ -57,10 +67,17 @@
 
 ## :clap: Inspiration
 
-* Project inspired by these 2 Youtube tutorials by [Dev Plus Plus](https://www.youtube.com/channel/UCSj1Igu3ejxqcQISNEmx8VQ)
+* Project inspired by these Youtube tutorials by [Dev Plus Plus](https://www.youtube.com/channel/UCSj1Igu3ejxqcQISNEmx8VQ)
 
+* **overlay-example** 
+* [Angular material date range picker [Detailed overview, 2020]](https://www.youtube.com/watch?v=F5bwreD6N9g)
+
+* **patterns-example** 
+* [Angular Design Patterns – Bridge [Advanced, 2020]](https://www.youtube.com/watch?v=2rQOu9TmuxE&t=60s)
+
+* **complex-form-control**
 * [Angular Material - Custom Form Field Control [Advanced, 2020, Pt.1]](https://www.youtube.com/watch?v=8ThVof0Rz64),
-* [2. Data Table](https://www.youtube.com/watch?v=ao-nY-9biWs&list=PL55RiY5tL51p2R1L8sxaYlzmWh6yIrX8k&index=2),
+* [Angular Material - Custom Form Field Control [Advanced, 2020, Pt.2]](https://www.youtube.com/watch?v=AZsw2nRxkBk&t=8s),
 
 ## :envelope: Contact
 
