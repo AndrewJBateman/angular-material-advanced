@@ -27,17 +27,20 @@ import { MatSlideToggleChange } from '@angular/material/slide-toggle';
 import { ESCAPE } from '@angular/cdk/keycodes';
 import { OverlayReference } from '@angular/cdk/overlay/overlay-reference';
 
+// define interface
 export interface State {
   flag: string;
   name: string;
   population: string;
 }
+
 @Component({
   selector: 'app-drop-down-search',
   templateUrl: './drop-down-search.component.html',
   styleUrls: ['./drop-down-search.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
+
 export class DropDownSearchComponent implements OnInit {
   showPanel$: Observable<boolean>;
 
@@ -46,12 +49,11 @@ export class DropDownSearchComponent implements OnInit {
       name: 'Vienna',
       population: '1.897M',
       flag:
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Flag_of_Vienna.svg/800px-Flag_of_Vienna.svg.png',
+        'https://upload.wikimedia.org/wikipedia/commons/b/bf/Flag_of_Salzburg%2C_Vienna%2C_Vorarlberg.svg'
     },
     {
       name: 'Salzburg',
       population: '152.367K',
-      // https://commons.wikimedia.org/wiki/File:Flag_of_California.svg
       flag:
         'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Flag_of_Salzburg_%28state%29.svg/1280px-Flag_of_Salzburg_%28state%29.svg.png',
     },
@@ -84,7 +86,7 @@ export class DropDownSearchComponent implements OnInit {
       originY: 'top',
       overlayX: 'center',
       overlayY: 'bottom',
-      panelClass: 'no-enogh-space-at-bottom',
+      panelClass: 'not-enough-space-at-bottom',
     },
   ];
 
@@ -122,6 +124,8 @@ export class DropDownSearchComponent implements OnInit {
         )
       )
     );
+
+    // use merge to turn multiple observables into a single observable
     this.isPanelHidden$ = merge(
       this.isOverlayDetached$,
       this.connectedOverlay.backdropClick
@@ -134,6 +138,7 @@ export class DropDownSearchComponent implements OnInit {
     );
   }
 
+  // helper functions
   setCaseSensitive({ checked }: MatSlideToggleChange) {
     this.isCaseSensitive = checked;
   }
@@ -169,7 +174,7 @@ class ConfirmScrollStrategy implements ScrollStrategy {
   }
 
   private scrollListener = () => {
-    if (confirm('The overlay will be closed. Procced?')) {
+    if (confirm('The overlay will be closed. Proceed?')) {
       this._overlay.detach();
       this.inputRef.nativeElement.blur();
       return;

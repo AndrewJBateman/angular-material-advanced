@@ -1,6 +1,6 @@
 import { Observable } from 'rxjs';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-// import { DialogComponent } from './overlay-example/dialog/dialog.component';
+import { DialogComponent } from './overlay-example/dialog/dialog.component';
 import { Component, OnInit } from '@angular/core';
 import { Overlay, OverlayPositionBuilder } from '@angular/cdk/overlay';
 import { ComponentPortal } from '@angular/cdk/portal';
@@ -40,8 +40,8 @@ export class AppComponent implements OnInit {
         .centerHorizontally()
         .centerVertically(),
     });
-    // const dialogPortal = new ComponentPortal(DialogComponent);
-    // overlayRef.attach(dialogPortal);
-    // overlayRef.backdropClick().subscribe(() => overlayRef.detach());
+    const dialogPortal = new ComponentPortal(DialogComponent);
+    overlayRef.attach(dialogPortal);
+    overlayRef.backdropClick().subscribe(() => overlayRef.detach());
   }
 }
