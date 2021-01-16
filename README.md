@@ -40,7 +40,7 @@
 
 ## :camera: Screenshots
 
-![Example screenshot](./img/dropdown.png)
+![Example screenshot](./img/dropdown.jpg)
 
 ## :signal_strength: Technologies
 
