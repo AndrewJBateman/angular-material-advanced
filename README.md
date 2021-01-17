@@ -26,17 +26,19 @@
 
 * Multiple tutorial modules use the same code base - selected in `app.component.html` by commenting out unused modules
 
-**Uses these tools**
+**Uses these Angular features**
 * [Angular Material Datepicker](https://material.angular.io/components/datepicker/overview) to be able to enter a date either through text input or by choosing a date from the calendar
 * [@Angular/core ContentChild](https://angular.io/api/core/ContentChild) parameter decorator that configures a content query - to get reference to the template component
 * [ControlValueAccessor Interface](https://angular.io/api/forms/ControlValueAccessor) used as an interface that acts as a bridge between the Angular forms API and a native element in the DOM
 * [Angular component error state](https://github.com/angular/components/blob/master/src/material/core/common-behaviors/error-state.ts)
 * [Angular material overlay directive](https://github.com/angular/components/blob/master/src/cdk/overlay/overlay-directives.ts)
+* [DoCheck lifecycle](https://angular.io/api/core/DoCheck) to invoke a custom change-detection function for a directive, in addition to the check performed by the default change-detector.
 
 **RxJS**
 * [RxJS iif](https://www.learnrxjs.io/learn-rxjs/operators/conditional/iif) used to subscribe to first or second observable based on a condition
 * [RxJS merge](https://www.learnrxjs.io/learn-rxjs/operators/combination/merge) to turn multiple observables into a single observable
 * [RxJS EMPTY](https://rxjs-dev.firebaseapp.com/api/index/function/empty) to creates an Observable that emits no items to the Observer and immediately emits a complete notification - with no scheduler.
+* [RxJS Subject](https://rxjs-dev.firebaseapp.com/guide/subject) a special type of Observable that allows values to be multicasted to many Observers.
 
 ## :camera: Screenshots
 
@@ -58,8 +60,22 @@
 
 ## :computer: Code Examples
 
-```html
+* Init lifecycle: toggle focus, pass frm changes to onChange lifecycle hook
 
+```typescript
+ngOnInit(): void {
+    this.focusMonitor.monitor(this.input).subscribe((focused) => {
+      this.focused = !!focused;
+      this.stateChanges.next();
+    });
+    this.focusMonitor
+      .monitor(this.input)
+      .pipe(take(1))
+      .subscribe(() => {
+        this.onTouch();
+      });
+    this.form.valueChanges.subscribe((value) => this.onChange(value));
+  }
 ```
 
 ## :cool: Features

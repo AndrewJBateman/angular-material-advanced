@@ -49,7 +49,7 @@ class SearchInputBase {
     public _parentForm: NgForm,
     public _defaultErrorStateMatcher: ErrorStateMatcher,
     public ngControl: NgControl
-  ) { }
+  ) {}
 }
 
 const _SearchInputMixinBase: CanUpdateErrorStateCtor &
@@ -70,13 +70,14 @@ const _SearchInputMixinBase: CanUpdateErrorStateCtor &
     },
   ],
 })
-export class CustomFormFieldControlComponent extends _SearchInputMixinBase
+export class CustomFormFieldControlComponent
+  extends _SearchInputMixinBase
   implements
-  OnInit,
-  OnDestroy,
-  MatFormFieldControl<FormFieldValue>,
-  ControlValueAccessor,
-  DoCheck {
+    OnInit,
+    OnDestroy,
+    MatFormFieldControl<FormFieldValue>,
+    ControlValueAccessor,
+    DoCheck {
   static nextId = 0;
   @ViewChild(MatInput, { read: ElementRef, static: true })
   input: ElementRef;
