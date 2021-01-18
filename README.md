@@ -2,7 +2,7 @@
  
 * **advanced-search-form** search from a list of countries shown in a drop-down list
 * **complex-form-control** Custom form field control with Angular Material & Reactive Forms using the [Angular Material design component library](https://material.angular.io/)
-* **overlay-example** Angular Date Range Picker:
+* **overlay-example** Angular Date Range Picker
 * **patterns example** Bridge Angular design pattern: velocity and weather widgets using a common wrapper
 * **Code by Dmytro Mezhenskyi** from [Dev Plus Plus](https://www.youtube.com/channel/UCSj1Igu3ejxqcQISNEmx8VQ) - see [:clap: Inspiration](#clap-inspiration) below. I am using it to learn a higher level of Angular programming
 
@@ -27,6 +27,11 @@
 * Multiple tutorial modules use the same code base - selected in `app.component.html` by commenting out unused modules
 
 **Uses these Angular features**
+* [@ViewChild decorator](https://angular.io/api/core/ViewChild) to configure a view query
+* [custom form field control](https://material.angular.io/guide/creating-a-custom-form-field-control) to be used inside <mat-form-field>
+* [HostBinding decorator](https://angular.io/api/core/HostBinding) to mark a DOM property as a host-binding property and supply configuration metadata
+* [Angular Accessibility - a11y - package](https://material.angular.io/cdk/a11y/overview) to provide a number of tools to improve accessibility. FocusMonitor is used - an injected service to listen for changes in the focus state of an element
+
 * [Angular Material Datepicker](https://material.angular.io/components/datepicker/overview) to be able to enter a date either through text input or by choosing a date from the calendar
 * [@Angular/core ContentChild](https://angular.io/api/core/ContentChild) parameter decorator that configures a content query - to get reference to the template component
 * [ControlValueAccessor Interface](https://angular.io/api/forms/ControlValueAccessor) used as an interface that acts as a bridge between the Angular forms API and a native element in the DOM

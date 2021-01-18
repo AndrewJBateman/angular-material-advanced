@@ -70,6 +70,8 @@ const _SearchInputMixinBase: CanUpdateErrorStateCtor &
     },
   ],
 })
+
+// Note use of MatFormFieldCustomComponent which requires an interface type
 export class CustomFormFieldControlComponent
   extends _SearchInputMixinBase
   implements
@@ -81,15 +83,20 @@ export class CustomFormFieldControlComponent
   static nextId = 0;
   @ViewChild(MatInput, { read: ElementRef, static: true })
   input: ElementRef;
+
+  // once value is obtained then trigger it using StateChanges
   @Input()
   set value(value: FormFieldValue) {
     this.form.patchValue(value);
     this.stateChanges.next();
   }
+
+  // return value using getter
   get value() {
     return this.form.value;
   }
 
+  // Create a new unique id that increments for every instance
   @HostBinding()
   id = `custom-form-field-id-${CustomFormFieldControlComponent.nextId++}`;
 
@@ -105,6 +112,7 @@ export class CustomFormFieldControlComponent
 
   focused: boolean;
 
+  // return true if value.query is empty
   get empty(): boolean {
     return !this.value.query && !this.value.scope;
   }
@@ -162,13 +170,16 @@ export class CustomFormFieldControlComponent
     this.stateChanges.next();
   }
 
+  // returns empty array
   setDescribedByIds(ids: string[]): void {
     this.describedBy = ids.join(' ');
   }
+
   onContainerClick(): void {
     this.focusMonitor.focusVia(this.input, 'program');
   }
 
+  // monitor the input, referenced to matInut via ViewChild
   ngOnInit(): void {
     this.focusMonitor.monitor(this.input).subscribe((focused) => {
       this.focused = !!focused;
