@@ -9,16 +9,18 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
     {
       provide: NG_VALUE_ACCESSOR,
       useExisting: LockInputComponent,
-      multi: true,
+      multi: true, // multiple instances
     },
   ],
 })
+
+// Class uses ControlValueAccessor interface as a bridge between Angular forms and the DOM native element
 export class LockInputComponent implements ControlValueAccessor {
   value = false;
 
   disabled = false;
   onTouched: () => void;
-  onChange: (value: boolean) => void = () => { };
+  onChange: (value: boolean) => void = () => {};
 
   writeValue(obj: boolean): void {
     this.value = obj;

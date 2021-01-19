@@ -133,10 +133,15 @@ export class CustomFormFieldControlComponent
   @HostBinding('attr.aria-describedby') describedBy = '';
 
   onChange: (value: FormFieldValue) => void;
+
+  // mark control as touched when onTouch function is called
   onTouch: () => void;
 
   form: FormGroup;
 
+
+  // @Self means resolve on the same level
+  //ngControl already has the value accessor
   constructor(
     private focusMonitor: FocusMonitor,
     @Optional() @Self() public ngControl: NgControl,
@@ -180,6 +185,7 @@ export class CustomFormFieldControlComponent
   }
 
   // monitor the input, referenced to matInut via ViewChild
+  // once focused we take 1 input and subcribe then run the onTouch function
   ngOnInit(): void {
     this.focusMonitor.monitor(this.input).subscribe((focused) => {
       this.focused = !!focused;
@@ -194,6 +200,7 @@ export class CustomFormFieldControlComponent
     this.form.valueChanges.subscribe((value) => this.onChange(value));
   }
 
+  // The DoCheck lifecycle code should be short or performance will be affected
   ngDoCheck() {
     if (this.ngControl) {
       this.updateErrorState();

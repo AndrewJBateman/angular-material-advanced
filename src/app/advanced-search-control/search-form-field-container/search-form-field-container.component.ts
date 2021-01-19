@@ -16,13 +16,13 @@ export class SearchFormFieldContainerComponent implements OnInit {
 
   ngOnInit(): void { }
 }
-
+// if validation function return null then control is valid, otherwise it is invalid
 function AdvancedSearchValidator(control: FormControl) {
   return control.value.scope !== null && control.value.query !== ''
     ? null
     : {
       validateSearch: {
-        valid: true,
+        valid:true,
       },
     };
 }
