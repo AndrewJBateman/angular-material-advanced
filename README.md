@@ -34,11 +34,11 @@
 * [ControlValueAccessor Interface](https://angular.io/api/forms/ControlValueAccessor) used as an interface that acts as a bridge between the Angular forms API and a native element in the DOM
 * [@angular/core Self decorator](https://angular.io/api/core/Self) used on constructor parameters to tell the DI framework to start dependency resolution from the local injector.
 * [@angular/core Optional decorator](https://angular.io/api/core/Optional) used on constructor parameters, which marks the parameter as being an optional dependency. The DI framework provides null if the dependency is not found.
-
+* [Angular material overlay directive](https://github.com/angular/components/blob/master/src/cdk/overlay/overlay-directives.ts)
+* [Angular CDK Overlay](https://material.angular.io/cdk/overlay/api) service to create overlays
 * [Angular Material Datepicker](https://material.angular.io/components/datepicker/overview) to be able to enter a date either through text input or by choosing a date from the calendar
 * [@Angular/core ContentChild](https://angular.io/api/core/ContentChild) parameter decorator that configures a content query - to get reference to the template component
 * [Angular component error state](https://github.com/angular/components/blob/master/src/material/core/common-behaviors/error-state.ts)
-* [Angular material overlay directive](https://github.com/angular/components/blob/master/src/cdk/overlay/overlay-directives.ts)
 * [DoCheck lifecycle](https://angular.io/api/core/DoCheck) to invoke a custom change-detection function for a directive, in addition to the check performed by the default change-detector.
 
 **RxJS**
@@ -50,6 +50,7 @@
 ## :camera: Screenshots
 
 ![Example screenshot](./img/dropdown.jpg)
+![Example screenshot](./img/widgets.jpg)
 
 ## :signal_strength: Technologies
 
@@ -67,7 +68,7 @@
 
 ## :computer: Code Examples
 
-* Init lifecycle: toggle focus, pass frm changes to onChange lifecycle hook
+* Init lifecycle: toggle focus, pass form changes to onChange lifecycle hook
 
 ```typescript
 ngOnInit(): void {

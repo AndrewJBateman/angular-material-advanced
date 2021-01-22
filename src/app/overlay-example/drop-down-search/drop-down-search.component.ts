@@ -110,6 +110,7 @@ export class DropDownSearchComponent implements OnInit {
   ngOnInit(): void {
     this.scrollStrategy = new ConfirmScrollStrategy(this.inputEl);
 
+    // if string received then panel is visible
     this.isPanelVisible$ = this.focusMonitor.monitor(this.inputEl).pipe(
       filter((focused) => !!focused),
       mapTo(true)
@@ -125,6 +126,7 @@ export class DropDownSearchComponent implements OnInit {
       )
     );
 
+    // when user clicks on the backdrop it hides the panel - so maps to false
     // use merge to turn multiple observables into a single observable
     this.isPanelHidden$ = merge(
       this.isOverlayDetached$,

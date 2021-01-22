@@ -2,6 +2,7 @@ import { Widget } from './../widget.interface';
 import { Component } from '@angular/core';
 import { WIDGET } from '../widget.token';
 
+// access WIDGET injection token and it will be resolved as an instance of the VelocityWidgetComponent
 @Component({
   selector: 'app-velocity-widget',
   templateUrl: './velocity-widget.component.html',
@@ -13,6 +14,8 @@ import { WIDGET } from '../widget.token';
     },
   ],
 })
+
+// implements widget interface that includes load() and refresh() methods
 export class VelocityWidgetComponent implements Widget {
   isRefreshing = false;
 

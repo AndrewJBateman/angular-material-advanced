@@ -1,8 +1,10 @@
 <div class="header">
-	<h1>Widget</h1>
-	<button mat-stroked-button (click)="onRefresh()">Refresh</button>
+  <h1>Widget</h1>
+  <button mat-stroked-button (click)="onRefresh()">Refresh</button>
 </div>
 <mat-divider></mat-divider>
+
+<!--ng-content will render the velocity-widget or weather-widget-->
 <section>
-	<ng-content></ng-content>
+  <ng-content></ng-content>
 </section>
