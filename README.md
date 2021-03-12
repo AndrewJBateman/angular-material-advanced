@@ -4,7 +4,7 @@
 * **complex-form-control** Custom form field control with Angular Material & Reactive Forms using the [Angular Material design component library](https://material.angular.io/)
 * **overlay-example** Angular Date Range Picker
 * **patterns example** Bridge Angular design pattern: velocity and weather widgets using a common wrapper
-* **Code by Dmytro Mezhenskyi** from [Dev Plus Plus](https://www.youtube.com/channel/UCSj1Igu3ejxqcQISNEmx8VQ) - see [:clap: Inspiration](#clap-inspiration) below. I am using it to learn a higher level of Angular programming
+* **Code by Dmytro Mezhenskyi** from [Decoded Frontend](https://www.youtube.com/c/DecodedFrontend/videos) - see [:clap: Inspiration](#clap-inspiration) below. I am using it to learn a higher level of Angular programming
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
@@ -28,7 +28,7 @@
 
 **Uses these Angular features**
 * [@ViewChild decorator](https://angular.io/api/core/ViewChild) to configure a view query
-* [custom form field control](https://material.angular.io/guide/creating-a-custom-form-field-control) to be used inside <mat-form-field>
+* [custom form field control](https://material.angular.io/guide/creating-a-custom-form-field-control) to be used inside mat-form-field
 * [HostBinding decorator](https://angular.io/api/core/HostBinding) to mark a DOM property as a host-binding property and supply configuration metadata
 * [Angular Accessibility - a11y - package](https://material.angular.io/cdk/a11y/overview) to provide a number of tools to improve accessibility. FocusMonitor is used - an injected service to listen for changes in the focus state of an element
 * [ControlValueAccessor Interface](https://angular.io/api/forms/ControlValueAccessor) used as an interface that acts as a bridge between the Angular forms API and a native element in the DOM
@@ -88,16 +88,16 @@ ngOnInit(): void {
 
 ## :cool: Features
 
-* tba
+* Rxjs is easy to read and implement
 
 ## :clipboard: Status & To-Do List
 
-* Status: Incomplete
-* To-Do: Complete
+* Status: Complete
+* To-Do: Add more advanced Angular code
 
 ## :clap: Inspiration
 
-* Project inspired by these Youtube tutorials by [Dev Plus Plus](https://www.youtube.com/channel/UCSj1Igu3ejxqcQISNEmx8VQ)
+* Project inspired by these Youtube tutorials by [Decoded Frontend](https://www.youtube.com/channel/UCSj1Igu3ejxqcQISNEmx8VQ)
 
 * **advanced-search-control**
 * [Angular Material - Custom Form Field Control [Advanced, 2020, Pt.1]](https://www.youtube.com/watch?v=8ThVof0Rz64)
@@ -114,6 +114,7 @@ ngOnInit(): void {
 * **patterns-example** 
 * [Angular Design Patterns – Bridge [Advanced, 2020]](https://www.youtube.com/watch?v=2rQOu9TmuxE)
 
+* [Eight reasons why you should be using RxJS](https://blog.mimacom.com/eight-reasons-why-you-should-be-using-rxjs/)
 
 ## :envelope: Contact
 
