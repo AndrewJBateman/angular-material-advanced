@@ -40,6 +40,7 @@
 * [@Angular/core ContentChild](https://angular.io/api/core/ContentChild) parameter decorator that configures a content query - to get reference to the template component
 * [Angular component error state](https://github.com/angular/components/blob/master/src/material/core/common-behaviors/error-state.ts)
 * [DoCheck lifecycle](https://angular.io/api/core/DoCheck) to invoke a custom change-detection function for a directive, in addition to the check performed by the default change-detector.
+* [ForwardRef Function](https://angular.io/api/core/forwardRef) to refer to references which are not yet defined.
 
 **RxJS**
 * [RxJS iif](https://www.learnrxjs.io/learn-rxjs/operators/conditional/iif) used to subscribe to first or second observable based on a condition
@@ -113,6 +114,9 @@ ngOnInit(): void {
 
 * **patterns-example** 
 * [Angular Design Patterns – Bridge [Advanced, 2020]](https://www.youtube.com/watch?v=2rQOu9TmuxE)
+
+* **
+* [ForwardRef Function in Angular (Advanced, 2021)](https://www.youtube.com/watch?v=uKLvqohfp6I&t=314s)
 
 * [Eight reasons why you should be using RxJS](https://blog.mimacom.com/eight-reasons-why-you-should-be-using-rxjs/)
 
