@@ -1,10 +1,11 @@
 # :zap: Angular Material Advanced
  
+* This is code by Dmytro Mezhenskyi, from [Decoded Frontend](https://www.youtube.com/c/DecodedFrontend/videos) - see [:clap: Inspiration](#clap-inspiration) below. I am using it to learn a higher level of Angular programming. The main modules are:
+
 * **advanced-search-form** search from a list of countries shown in a drop-down list
 * **complex-form-control** Custom form field control with Angular Material & Reactive Forms using the [Angular Material design component library](https://material.angular.io/)
 * **overlay-example** Angular Date Range Picker
 * **patterns example** Bridge Angular design pattern: velocity and weather widgets using a common wrapper
-* **Code by Dmytro Mezhenskyi** from [Decoded Frontend](https://www.youtube.com/c/DecodedFrontend/videos) - see [:clap: Inspiration](#clap-inspiration) below. I am using it to learn a higher level of Angular programming
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
@@ -62,14 +63,14 @@
 ## :floppy_disk: Setup
 
 * Install dependencies using `npm i`
-* Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-* Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-* Run `ng update` to update Angular
+* `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+* `ng update` to update Angular
 * Individual modules are selected in the `app.component.html` by commenting out the other modules
 
 ## :computer: Code Examples
 
-* Init lifecycle: toggle focus, pass form changes to onChange lifecycle hook
+* Init lifecycle: toggle focus, pass form changes to the onChange lifecycle hook
 
 ```typescript
 ngOnInit(): void {
@@ -98,7 +99,7 @@ ngOnInit(): void {
 
 ## :clap: Inspiration
 
-* Project inspired by these Youtube tutorials by [Decoded Frontend](https://www.youtube.com/channel/UCSj1Igu3ejxqcQISNEmx8VQ)
+* All code from these Youtube tutorials by [Decoded Frontend](https://www.youtube.com/channel/UCSj1Igu3ejxqcQISNEmx8VQ) as below:
 
 * **advanced-search-control**
 * [Angular Material - Custom Form Field Control [Advanced, 2020, Pt.1]](https://www.youtube.com/watch?v=8ThVof0Rz64)
@@ -115,11 +116,8 @@ ngOnInit(): void {
 * **patterns-example** 
 * [Angular Design Patterns – Bridge [Advanced, 2020]](https://www.youtube.com/watch?v=2rQOu9TmuxE)
 
-* **
-* [ForwardRef Function in Angular (Advanced, 2021)](https://www.youtube.com/watch?v=uKLvqohfp6I&t=314s)
-
 * [Eight reasons why you should be using RxJS](https://blog.mimacom.com/eight-reasons-why-you-should-be-using-rxjs/)
 
 ## :envelope: Contact
 
-* Repo created by [ABateman](https://www.andrewbateman.org) - you are welcome to [send me a message](https://andrewbateman.org/contact)
+* Repo created by [ABateman](https://github.com/AndrewJBateman), email: gomezbateman@yahoo.com
