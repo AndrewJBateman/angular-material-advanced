@@ -1,6 +1,6 @@
 # :zap: Angular Material Advanced
  
-* This is code by Dmytro Mezhenskyi, from [Decoded Frontend](https://www.youtube.com/c/DecodedFrontend/videos) - see [:clap: Inspiration](#clap-inspiration) below. I am using it to learn a higher level of Angular programming. The main modules are:
+This is code by Dmytro Mezhenskyi, from [Decoded Frontend](https://www.youtube.com/c/DecodedFrontend/videos) - see [:clap: Inspiration](#clap-inspiration) below, to learn a higher level of Angular programming. The main modules are:
 
 * **advanced-search-form** search from a list of countries shown in a drop-down list
 * **complex-form-control** Custom form field control with Angular Material & Reactive Forms using the [Angular Material design component library](https://material.angular.io/)
@@ -117,6 +117,10 @@ ngOnInit(): void {
 * [Angular Design Patterns – Bridge [Advanced, 2020]](https://www.youtube.com/watch?v=2rQOu9TmuxE)
 
 * [Eight reasons why you should be using RxJS](https://blog.mimacom.com/eight-reasons-why-you-should-be-using-rxjs/)
+
+## :file_folder: License
+
+* This project is licensed under the terms of the MIT license.
 
 ## :envelope: Contact
 
