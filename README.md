@@ -1,17 +1,21 @@
 # :zap: Angular Material Advanced
- 
+
 This is code by Dmytro Mezhenskyi, from [Decoded Frontend](https://www.youtube.com/c/DecodedFrontend/videos) - see [:clap: Inspiration](#clap-inspiration) below, to learn a higher level of Angular programming. The main modules are:
 
 * **advanced-search-form** search from a list of countries shown in a drop-down list
 * **complex-form-control** Custom form field control with Angular Material & Reactive Forms using the [Angular Material design component library](https://material.angular.io/)
 * **overlay-example** Angular Date Range Picker
 * **patterns example** Bridge Angular design pattern: velocity and weather widgets using a common wrapper
+* **Note:** to open web links in a new window use: _ctrl+click on link_
 
-*** Note: to open web links in a new window use: _ctrl+click on link_**
+![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/angular-material-advanced?style=plastic)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/AndrewJBateman/angular-material-advanced?style=plastic)
+![GitHub Repo stars](https://img.shields.io/github/stars/AndrewJBateman/angular-material-advanced?style=plastic)
+![GitHub last commit](https://img.shields.io/github/last-commit/AndrewJBateman/angular-material-advanced?style=plastic)
 
 ## :page_facing_up: Table of contents
 
-* [:zap: Angular Material Table](#zap-angular-material-table)
+* [:zap: Angular Material Advanced](#zap-angular-material-advanced)
   * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
   * [:books: General info](#books-general-info)
   * [:camera: Screenshots](#camera-screenshots)
@@ -21,13 +25,15 @@ This is code by Dmytro Mezhenskyi, from [Decoded Frontend](https://www.youtube.c
   * [:cool: Features](#cool-features)
   * [:clipboard: Status & To-Do List](#clipboard-status--to-do-list)
   * [:clap: Inspiration](#clap-inspiration)
+  * [:file_folder: License](#file_folder-license)
   * [:envelope: Contact](#envelope-contact)
 
 ## :books: General info
 
 * Multiple tutorial modules use the same code base - selected in `app.component.html` by commenting out unused modules
 
-**Uses these Angular features**
+Uses these Angular features
+
 * [@ViewChild decorator](https://angular.io/api/core/ViewChild) to configure a view query
 * [custom form field control](https://material.angular.io/guide/creating-a-custom-form-field-control) to be used inside mat-form-field
 * [HostBinding decorator](https://angular.io/api/core/HostBinding) to mark a DOM property as a host-binding property and supply configuration metadata
@@ -43,7 +49,8 @@ This is code by Dmytro Mezhenskyi, from [Decoded Frontend](https://www.youtube.c
 * [DoCheck lifecycle](https://angular.io/api/core/DoCheck) to invoke a custom change-detection function for a directive, in addition to the check performed by the default change-detector.
 * [ForwardRef Function](https://angular.io/api/core/forwardRef) to refer to references which are not yet defined.
 
-**RxJS**
+RxJS
+
 * [RxJS iif](https://www.learnrxjs.io/learn-rxjs/operators/conditional/iif) used to subscribe to first or second observable based on a condition
 * [RxJS merge](https://www.learnrxjs.io/learn-rxjs/operators/combination/merge) to turn multiple observables into a single observable
 * [RxJS EMPTY](https://rxjs-dev.firebaseapp.com/api/index/function/empty) to creates an Observable that emits no items to the Observer and immediately emits a complete notification - with no scheduler.
@@ -56,8 +63,8 @@ This is code by Dmytro Mezhenskyi, from [Decoded Frontend](https://www.youtube.c
 
 ## :signal_strength: Technologies
 
-* [Angular v11](https://angular.io/)
-* [Angular Material v11](https://material.angular.io/)
+* [Angular v12](https://angular.io/)
+* [Angular Material v12](https://material.angular.io/)
 * [RxJS v6](https://rxjs-dev.firebaseapp.com/guide/overview) library of observable sequences
 
 ## :floppy_disk: Setup
@@ -113,7 +120,7 @@ ngOnInit(): void {
 * [Angular CDK - Overlay Module Pt.2 (Advanced, 2020)](https://www.youtube.com/watch?v=2pS9bYtsBRo)
 * [Angular material date range picker [Detailed overview, 2020]](https://www.youtube.com/watch?v=F5bwreD6N9g)
 
-* **patterns-example** 
+* **patterns-example**
 * [Angular Design Patterns – Bridge [Advanced, 2020]](https://www.youtube.com/watch?v=2rQOu9TmuxE)
 
 * [Eight reasons why you should be using RxJS](https://blog.mimacom.com/eight-reasons-why-you-should-be-using-rxjs/)
