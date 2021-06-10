@@ -1,13 +1,14 @@
+@use '~@angular/material' as mat;
 @import "~@angular/material/theming";
 @import "./app/overlay-example/drop-down-search/drop-down-search.theme";
-@include mat-core();
+@include mat.core();
 
-$angular-cdk-lessons-primary: mat-palette($mat-teal);
-$angular-cdk-lessons-accent: mat-palette($mat-pink, A200, A100, A400);
-$angular-cdk-lessons-warn: mat-palette($mat-red);
+$angular-cdk-lessons-primary: mat.define-palette(mat.$teal-palette);
+$angular-cdk-lessons-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$angular-cdk-lessons-warn: mat.define-palette(mat.$red-palette);
 
 // Create the theme object (a Sass map containing all of the palettes).
-$angular-cdk-lessons-theme: mat-light-theme(
+$angular-cdk-lessons-theme: mat.define-light-theme(
   $angular-cdk-lessons-primary,
   $angular-cdk-lessons-accent,
   $angular-cdk-lessons-warn
@@ -16,7 +17,7 @@ $angular-cdk-lessons-theme: mat-light-theme(
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include angular-material-theme($angular-cdk-lessons-theme);
+@include mat.all-component-themes($angular-cdk-lessons-theme);
 
 // include custome themes
 @include drop-down-search-theme($angular-cdk-lessons-theme);
