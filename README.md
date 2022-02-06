@@ -63,16 +63,14 @@ RxJS
 
 ## :signal_strength: Technologies
 
-* [Angular v12](https://angular.io/)
-* [Angular Material v12](https://material.angular.io/)
-* [RxJS v6](https://rxjs-dev.firebaseapp.com/guide/overview) library of observable sequences
+* [Angular v13](https://angular.io/)
+* [Angular Material v13](https://material.angular.io/)
+* [RxJS v7](https://rxjs-dev.firebaseapp.com/guide/overview) library of observable sequences
 
 ## :floppy_disk: Setup
 
 * Install dependencies using `npm i`
 * `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-* `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-* `ng update` to update Angular
 * Individual modules are selected in the `app.component.html` by commenting out the other modules
 
 ## :computer: Code Examples
@@ -101,8 +99,8 @@ ngOnInit(): void {
 
 ## :clipboard: Status & To-Do List
 
-* Status: Complete
-* To-Do: Add more advanced Angular code
+* Status: One error: `Argument of type 'ErrorStateMatcher' is not assignable to parameter of type 'FormGroupDirective'. Type 'ErrorStateMatcher' is missing the following properties from type 'FormGroupDirective': validators, asyncValidators, submitted, _oldForm, and 50 more.ts(2345)`
+* To-Do: Fix error which is caused by Angular13 removing `CanUpdateErrorStateCtor` & `CanDisableCtor` from `@angular/material/core` as not required
 
 ## :clap: Inspiration
 

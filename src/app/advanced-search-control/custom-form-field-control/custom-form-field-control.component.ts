@@ -13,7 +13,6 @@ import {
   DoCheck,
 } from '@angular/core';
 import { MatFormFieldControl } from '@angular/material/form-field';
-import { Subject } from 'rxjs';
 import {
   NgControl,
   ControlValueAccessor,
@@ -25,10 +24,10 @@ import {
 } from '@angular/forms';
 import {
   ErrorStateMatcher,
-  CanUpdateErrorStateCtor,
+  // CanUpdateErrorStateCtor,
   mixinErrorState,
   mixinDisabled,
-  CanDisableCtor,
+  // CanDisableCtor,
 } from '@angular/material/core';
 import { take } from 'rxjs/operators';
 
@@ -52,8 +51,9 @@ class SearchInputBase {
   ) {}
 }
 
-const _SearchInputMixinBase: CanUpdateErrorStateCtor &
-  CanDisableCtor = mixinDisabled(mixinErrorState(SearchInputBase));
+const _SearchInputMixinBase
+  // :CanUpdateErrorStateCtor & CanDisableCtor
+  = mixinDisabled(mixinErrorState(SearchInputBase));
 
 @Component({
   selector: 'app-custom-form-field-control',
