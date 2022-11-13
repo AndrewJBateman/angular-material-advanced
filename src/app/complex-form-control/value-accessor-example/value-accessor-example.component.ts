@@ -1,4 +1,4 @@
-import { FormGroup, FormBuilder, FormControl } from '@angular/forms';
+import { UntypedFormGroup, UntypedFormBuilder, UntypedFormControl } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,14 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./value-accessor-example.component.scss'],
 })
 export class ValueAccessorExampleComponent implements OnInit {
-  form: FormGroup;
+  form: UntypedFormGroup;
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: UntypedFormBuilder) {}
 
   ngOnInit(): void {
     this.form = this.fb.group({
-      itemName: new FormControl(),
-      isLocked: new FormControl(false),
+      itemName: new UntypedFormControl(),
+      isLocked: new UntypedFormControl(false),
     });
   }
 

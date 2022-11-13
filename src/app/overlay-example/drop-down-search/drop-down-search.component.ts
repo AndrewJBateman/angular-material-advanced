@@ -22,7 +22,7 @@ import {
   ScrollStrategyOptions,
   ScrollStrategy,
 } from '@angular/cdk/overlay';
-import { FormControl } from '@angular/forms';
+import { UntypedFormControl } from '@angular/forms';
 import { MatSlideToggleChange } from '@angular/material/slide-toggle';
 import { ESCAPE } from '@angular/cdk/keycodes';
 import { OverlayReference } from '@angular/cdk/overlay/overlay-reference';
@@ -70,7 +70,7 @@ export class DropDownSearchComponent implements OnInit {
         '//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Flag_of_Novopskovskiy_Raion_in_Luhansk_Oblast.png/100px-Flag_of_Novopskovskiy_Raion_in_Luhansk_Oblast.png',
     },
   ];
-  stateCtrl = new FormControl();
+  stateCtrl = new UntypedFormControl();
   filteredStates$: Observable<State[]>;
   isCaseSensitive: boolean = false;
   positions: ConnectedPosition[] = [

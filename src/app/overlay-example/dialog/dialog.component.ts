@@ -1,4 +1,4 @@
-import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, UntypedFormControl } from '@angular/forms';
 import {
   Component,
   OnInit,
@@ -19,7 +19,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class DialogComponent implements OnInit, AfterViewInit {
-  form: FormGroup;
+  form: UntypedFormGroup;
   comparisonStart = new Date('2020-06-27');
   comparisonEnd = new Date('2021-01-13');
   startAt = new Date('2020-07-3');
@@ -27,13 +27,13 @@ export class DialogComponent implements OnInit, AfterViewInit {
   @ViewChild(MatDateRangeInput) private rangeInput: MatDateRangeInput<Date>;
   @ViewChild(MatDateRangePicker) private rangePicker: MatDateRangePicker<Date>;
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: UntypedFormBuilder) { }
 
   ngOnInit(): void {
     this.form = this.fb.group({
-      daterange: new FormGroup({
-        start: new FormControl(),
-        end: new FormControl(),
+      daterange: new UntypedFormGroup({
+        start: new UntypedFormControl(),
+        end: new UntypedFormControl(),
       }),
     });
   }

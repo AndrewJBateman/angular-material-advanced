@@ -16,9 +16,9 @@ import { MatFormFieldControl } from '@angular/material/form-field';
 import {
   NgControl,
   ControlValueAccessor,
-  FormBuilder,
-  FormGroup,
-  FormControl,
+  UntypedFormBuilder,
+  UntypedFormGroup,
+  UntypedFormControl,
   FormGroupDirective,
   NgForm,
 } from '@angular/forms';
@@ -37,7 +37,7 @@ export interface FormFieldValue {
 }
 
 export class CustomErrorMatcher implements ErrorStateMatcher {
-  isErrorState(control: FormControl): boolean {
+  isErrorState(control: UntypedFormControl): boolean {
     return control.dirty && control.invalid;
   }
 }
@@ -137,7 +137,7 @@ export class CustomFormFieldControlComponent
   // mark control as touched when onTouch function is called
   onTouch: () => void;
 
-  form: FormGroup;
+  form: UntypedFormGroup;
 
 
   // @Self means resolve on the same level
@@ -145,7 +145,7 @@ export class CustomFormFieldControlComponent
   constructor(
     private focusMonitor: FocusMonitor,
     @Optional() @Self() public ngControl: NgControl,
-    private fb: FormBuilder,
+    private fb: UntypedFormBuilder,
     public _defaultErrorStateMatcher: ErrorStateMatcher,
     @Optional() _parentForm: NgForm,
     @Optional() _parentFormGroup: FormGroupDirective
@@ -155,8 +155,8 @@ export class CustomFormFieldControlComponent
       this.ngControl.valueAccessor = this;
     }
     this.form = this.fb.group({
-      scope: new FormControl(''),
-      query: new FormControl(''),
+      scope: new UntypedFormControl(''),
+      query: new UntypedFormControl(''),
     });
   }
 
