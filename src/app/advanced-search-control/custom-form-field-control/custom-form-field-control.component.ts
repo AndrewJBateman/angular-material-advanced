@@ -29,6 +29,7 @@ import {
   mixinDisabled,
   // CanDisableCtor,
 } from '@angular/material/core';
+import { Subject } from 'rxjs';
 import { take } from 'rxjs/operators';
 
 export interface FormFieldValue {
@@ -47,7 +48,8 @@ class SearchInputBase {
     public _parentFormGroup: FormGroupDirective,
     public _parentForm: NgForm,
     public _defaultErrorStateMatcher: ErrorStateMatcher,
-    public ngControl: NgControl
+    public ngControl: NgControl,
+    public stateChanges: Subject<void> = new Subject<void>()
   ) {}
 }
 

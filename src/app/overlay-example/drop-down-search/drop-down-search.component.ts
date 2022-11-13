@@ -25,7 +25,7 @@ import {
 import { UntypedFormControl } from '@angular/forms';
 import { MatSlideToggleChange } from '@angular/material/slide-toggle';
 import { ESCAPE } from '@angular/cdk/keycodes';
-import { OverlayReference } from '@angular/cdk/overlay/overlay-reference';
+import { OverlayRef } from '@angular/cdk/overlay';
 
 // define interface
 export interface State {
@@ -159,11 +159,11 @@ export class DropDownSearchComponent implements OnInit {
 }
 
 class ConfirmScrollStrategy implements ScrollStrategy {
-  _overlay: OverlayReference;
+  _overlay: OverlayRef;
 
   constructor(private inputRef: ElementRef) { }
 
-  attach(overlayRef: OverlayReference) {
+  attach(overlayRef: OverlayRef) {
     this._overlay = overlayRef;
   }
 
