@@ -63,8 +63,8 @@ RxJS
 
 ## :signal_strength: Technologies
 
-* [Angular v13](https://angular.io/)
-* [Angular Material v13](https://material.angular.io/)
+* [Angular v14](https://angular.io/)
+* [Angular Material v14](https://material.angular.io/)
 * [RxJS v7](https://rxjs-dev.firebaseapp.com/guide/overview) library of observable sequences
 
 ## :floppy_disk: Setup
@@ -100,7 +100,7 @@ ngOnInit(): void {
 ## :clipboard: Status & To-Do List
 
 * Status: One error: `Argument of type 'ErrorStateMatcher' is not assignable to parameter of type 'FormGroupDirective'. Type 'ErrorStateMatcher' is missing the following properties from type 'FormGroupDirective': validators, asyncValidators, submitted, _oldForm, and 50 more.ts(2345)`
-* To-Do: Fix error which is caused by Angular13 removing `CanUpdateErrorStateCtor` & `CanDisableCtor` from `@angular/material/core` as not required
+* To-Do: Fix (type) error which is caused by Angular removing `CanUpdateErrorStateCtor` & `CanDisableCtor` from `@angular/material/core` as not required
 
 ## :clap: Inspiration
 
